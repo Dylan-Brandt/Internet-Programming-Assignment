@@ -98,11 +98,11 @@ table, th, td
 }
 tr.evenRow
 {
-    background-color: lightgray;
+    background-color: darkgray;
 }
 tr.oddRow
 {
-    background-color: darkgray;
+    background-color: lightgray;
 }
 .tableWrapper table
 {
@@ -117,4 +117,7 @@ div.widgetWrapper
     min-width: 90%;
     top:auto;
     margin: 5%;
+}
+.clickyData {
+    cursor: pointer;
 }
