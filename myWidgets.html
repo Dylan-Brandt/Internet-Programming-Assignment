@@ -5,6 +5,8 @@
         <title>Widgets</title>
         <link rel="stylesheet" href="resources/css/myStyle.css">
         <link rel="stylesheet" href="resources/css/passwordWidget.css">
+        <link rel="stylesheet" href="resources/css/weatherWidget.css">
+        <script async defer src="resources/js/weatherWidget.js"></script>
         <script async defer src="resources/js/passwordWidget.js"></script>
         <script async src="resources/js/timeWidget.js"></script>
     </head>
@@ -45,6 +47,35 @@
                     <div id="timeUntil"></div>
                 </div>
             </div>
-        </div>    
+            <div id="weatherContainer">
+                <div id="weatherHeader">
+                    <h2>weather</h2>
+                    <hr>
+                </div>
+                <div id="weatherContent">
+                    <p id="weatherStatus"></p>
+                    <div>
+                        <span>Coordinates:</span>
+                        <input id="latitude-input" type="text" placeholder="Latitude">
+                        <input id="longitude-input" type="text" placeholder="Longitude">
+                    </div>
+                    <div>
+                        <button id="find-me" type="button">Auto-Find me!</button>
+                        <button id="get-weather-btn" type="button">Find The Weather!</button>
+                    </div>
+                    </form>
+        
+                    <div id="weatherOutput">
+                        <p id="temp-display"></p>
+                        <p id="cloud-cover-display"></p>
+                        <p id="sunrise-display"></p>
+                        <p id="sunset-display"></p>
+                    </div>
+                    <!-- Interesting fact. We're legally required to put this here. -->
+                    <a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+                    <a href="https://sunrise-sunset.org/">Sunrise and sunset data by sunrise-sunset.org</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
