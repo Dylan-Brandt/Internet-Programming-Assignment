@@ -114,6 +114,7 @@ div.widgetWrapper
     grid-template-columns: 50% 50%;
     column-gap: 5%;
     justify-content: center;
+    align-items: center;
     min-width: 90%;
     top:auto;
     margin: 5%;
@@ -127,8 +128,8 @@ div#contactMe {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 10%;
-    left: 25%;
+    top: 5%;
+    left: 20%;
     margin: auto;
 }
 div#contactMe h1 {
