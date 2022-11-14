@@ -26,7 +26,7 @@ function validateForm() {
             return;
         };
     }
-    document.forms["contactMe"].action = "https://www-users.cselabs.umn.edu/~joh13266/contactMe.php";
+    document.forms["contactMe"].action = "http://localhost:9001/forms";
 
 };
 
