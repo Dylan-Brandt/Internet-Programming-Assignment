@@ -98,11 +98,11 @@ table, th, td
 }
 tr.evenRow
 {
-    background-color: lightgray;
+    background-color: darkgray;
 }
 tr.oddRow
 {
-    background-color: darkgray;
+    background-color: lightgray;
 }
 .tableWrapper table
 {
@@ -114,7 +114,54 @@ div.widgetWrapper
     grid-template-columns: 50% 50%;
     column-gap: 5%;
     justify-content: center;
+    align-items: center;
     min-width: 90%;
     top:auto;
     margin: 5%;
 }
+.clickyData {
+    cursor: pointer;
+}
+div#contactMe {
+    background-color: darkolivegreen;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 5%;
+    left: 20%;
+    margin: auto;
+}
+div#contactMe h1 {
+    width:100%;
+}
+div#contactMe, form, fieldset{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+div#contactMe label{
+    float: left;
+    font-size: 1.5em;
+}
+div#contactMe input[type=text], textarea {
+    float: center;
+    width: 100%;
+}
+div#contactMe input[type=radio]{
+    float: left;
+    width: 10%;
+    margin: 0;
+}
+div#contactMe input[type=submit] {
+    float: center;
+    width: 20%;
+}
+div#concernMessage {
+    width: 50%;
+    height: 20%;
+    float: right;
+    margin: 5%;
+}
+
