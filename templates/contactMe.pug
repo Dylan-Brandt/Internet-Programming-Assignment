@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Contact Me
+  link(rel='stylesheet' href='resources/css/myStyle.css')
+  script(src='resources/js/contactMe.js')
+body
+    nav
+        a(href='myAboutMe.html') myAboutMe
+        a(href='myContacts.html') myContacts
+        a(href='myWidgets.html') myWidgets
+        a(href='contactMe.html') contactMe
+    h1 A Page to Contact Me
+    #contactMe
+        h1 Contact Me
+        br
+        br
+        form(name='contactMe' onsubmit='return validateForm()' method='post')
+            label(for='postTitle') Title
+            input#postTitle(type='text' name='postTitle')
+            label(for='email') Email
+            input#email(type='text' name='email' onchange='updateUsername()')
+            label(for='username') Username
+            input#username(type='text' name='username')
+            label(for='link') Link
+            input#link(type='text' name='link')
+            fieldset(onchange='checkConcern()')
+                label(for='question') Question
+                input#question(type='radio' name='category' value='Question')
+                label(for='comment') Comment
+                input#comment(type='radio' name='category' value='Comment')
+                label(for='concern') Concern
+                input#concern(type='radio' name='category' value='Concern')
+            label(for='message') Message
+            textarea#message(name='message')
+            input#submit(type='submit')
+        #concernMessage
