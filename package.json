@@ -1,0 +1,24 @@
+{
+  "name": "project-csci-4131",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan-Brandt/Internet-Programming-Assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylan-Brandt/Internet-Programming-Assignment/issues"
+  },
+  "homepage": "https://github.com/Dylan-Brandt/Internet-Programming-Assignment#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2"
+  }
+}

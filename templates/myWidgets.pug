@@ -1,0 +1,60 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Widgets
+  link(rel='stylesheet' href='resources/css/myStyle.css')
+  link(rel='stylesheet' href='resources/css/passwordWidget.css')
+  link(rel='stylesheet' href='resources/css/weatherWidget.css')
+  script(async='' defer='' src='resources/js/weatherWidget.js')
+  script(async='' defer='' src='resources/js/passwordWidget.js')
+  script(async='' src='resources/js/timeWidget.js')
+body
+  nav
+    a(href='myAboutMe.html') myAboutMe
+    a(href='myContacts.html') myContacts
+    a(href='myWidgets.html') myWidgets
+    a(href='contactMe.html') contactMe
+  h1 My Widgets
+  .widgetWrapper
+    iframe(width='560' height='315' src='https://www.youtube.com/embed/kwhx6xbSSJE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    blockquote.twitter-tweet
+      p(lang='en' dir='ltr')
+        | Hilarious&#x1F602; 
+        a(href='https://t.co/kyueC6kDXc') pic.twitter.com/kyueC6kDXc
+      | &mdash; Tansu YE&Gbreve;EN (@TansuYegen) 
+      a(href='https://twitter.com/TansuYegen/status/1569802101525446659?ref_src=twsrc%5Etfw') September 13, 2022
+    script(async='' src='https://platform.twitter.com/widgets.js' charset='utf-8')
+    #passwordContainer
+      #passwordHeader
+        h2 Password Strength Checking with JS
+        hr
+      #content
+        form#register(name='register')
+          label(for='password') Password :
+          input#password(name='password' type='password' placeholder='Type Your Password here')
+          span#pwdresult
+    #countdownContainer
+      #countdownHeader
+        h2 Time until end of semester
+        #timeUntil
+    #weatherContainer
+      #weatherHeader
+        h2 weather
+        hr
+      #weatherContent
+        p#weatherStatus
+        div
+          span Coordinates:
+          input#latitude-input(type='text' placeholder='Latitude')
+          input#longitude-input(type='text' placeholder='Longitude')
+        div
+          button#find-me(type='button') Auto-Find me!
+          button#get-weather-btn(type='button') Find The Weather!
+        #weatherOutput
+          p#temp-display
+          p#cloud-cover-display
+          p#sunrise-display
+          p#sunset-display
+        // Interesting fact. We're legally required to put this here.
+        a(href='https://open-meteo.com/') Weather data by Open-Meteo.com
+        a(href='https://sunrise-sunset.org/') Sunrise and sunset data by sunrise-sunset.org
