@@ -1,0 +1,33 @@
+#clickContainer {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    width: 34em;
+    background-color: #ffffff;
+    padding: 1.25em;
+    margin: 5.5em auto;
+    border-radius: 0.4em;
+    height: auto;
+    border: 2px solid gray;
+}
+
+#clickContainer #clickHeader {
+    text-align: center;
+    background-color: #FEFFED;
+    border-radius: 0.25em;
+    margin: auto;
+}
+
+#clickContainer h2{
+    width: 100%;
+    padding-top: 10px;
+}
+
+#clickContainer #clickContent {
+    text-align: center;
+    margin: auto;
+}
+
+#clickContainer input {
+    width:5em;
+}

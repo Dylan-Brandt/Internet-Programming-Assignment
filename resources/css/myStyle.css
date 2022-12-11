@@ -92,7 +92,6 @@ div.tableWrapper
 table, th, td
 {
     border: 1px solid black;
-    width: 50%;
     border-collapse: collapse;
     margin: 5px;
 }
@@ -122,39 +121,39 @@ div.widgetWrapper
 .clickyData {
     cursor: pointer;
 }
-div#contactMe {
+div.formStyle {
     background-color: darkolivegreen;
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
     position: fixed;
+    left: 5%;
     top: 5%;
-    left: 20%;
     margin: auto;
 }
-div#contactMe h1 {
+div.formStyle h1 {
     width:100%;
 }
-div#contactMe, form, fieldset{
+div.formStyle, form, fieldset{
     margin: 5%;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
 }
-div#contactMe label{
+div.formStyle label{
     float: left;
     font-size: 1.5em;
 }
-div#contactMe input[type=text], textarea {
+div.formStyle input[type=text], textarea {
     float: center;
     width: 100%;
 }
-div#contactMe input[type=radio]{
+div.formStyle input[type=radio]{
     float: left;
     width: 10%;
     margin: 0;
 }
-div#contactMe input[type=submit] {
+div.formStyle input[type=submit] {
     float: center;
     width: 20%;
 }
@@ -164,4 +163,25 @@ div#concernMessage {
     float: right;
     margin: 5%;
 }
+.formStyle #errorMessage {
+    width: 50%;
+    height: 20%;
+    float: right;
+    margin: 5%;
+}
+#contactLogWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#noQueryResult {
+    background-color: gray;
+    border: 1px solid red;
+    width: 20%;
+    height: 10%;
+    margin: 5%;
+    border-radius: 5%;
+}
+
 

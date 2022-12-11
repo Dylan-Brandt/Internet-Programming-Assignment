@@ -26,7 +26,7 @@ function validateForm() {
             return;
         };
     }
-    document.forms["contactMe"].action = "http://localhost:9001/forms";
+    document.forms["contactMe"].action = "http://localhost:3006/contactMe";
 
 };
 

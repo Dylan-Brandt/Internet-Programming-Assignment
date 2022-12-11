@@ -5,13 +5,9 @@ head
   link(rel='stylesheet' href='resources/css/myStyle.css')
   script(src='resources/js/contactMe.js')
 body
-    nav
-        a(href='myAboutMe.html') myAboutMe
-        a(href='myContacts.html') myContacts
-        a(href='myWidgets.html') myWidgets
-        a(href='contactMe.html') contactMe
+    include navBar
     h1 A Page to Contact Me
-    #contactMe
+    .formStyle
         h1 Contact Me
         br
         br
@@ -34,4 +30,5 @@ body
             label(for='message') Message
             textarea#message(name='message')
             input#submit(type='submit')
+        p #{queryError}
         #concernMessage

@@ -1,38 +1,34 @@
 doctype html
 head
-  meta(charset='UTF-8')
-  link(rel='stylesheet' href='resources/css/myStyle.css')
-  script(src='resources/js/myScript.js')
-  title About
+	meta(charset='UTF-8')
+	link(rel='stylesheet' href='resources/css/myStyle.css')
+	script(src='resources/js/myScript.js')
+	title About
 body
-  nav
-    a(href='myAboutMe.html') myAboutMe
-    a(href='myContacts.html') myContacts
-    a(href='myWidgets.html') myWidgets
-    a(href='contactMe.html') contactMe
-  h1.name Dylan Brandt
-  img.self(src='resources/images/selfie1.jpg' alt='Selfie of Dylan' height='400' width='220')
-  .biographic
-    .boxColumn
-      h1
-        | About
-      p
-        | Hello. My name is Dylan Brandt, I am a 
-        em senior
-        |  computer engineering student at the University of Minnesota.
-        |             I have enjoyed learning about computer science and electrical engineering in my degree and hope to graduate this winter. 
-        br
-        br
-        |             I was lucky to get an internship for this summer and fall semester at Steris Corp, a medical device company among other things.
-        |             At Steris my task has been to write an emulator software for one of their robots with the purpose of saving lab time for test engineers. 
-        br
-        br
-        |             I hope to sharpen my skills as a programmer this semester with CSCI 4131 and become a more well rounded developer.
-    .boxColumn
-      h1
-        | Hobbies
-      p
-        | In my freetime I enjoy several hobbies including rock climbing, skiing, videogaming, and playing musical instruments such as guitar, bass, and drums (I want a 
-        strong banjo
-        |  so badly).
-        |             Some of my other favorite things include the Minnesota state fair, baseball, and football.
+	include navBar
+	h1.name Dylan Brandt
+	img.self(src='resources/images/selfie1.jpg' alt='Selfie of Dylan' height='400' width='220')
+	.biographic
+		.boxColumn
+			h1
+				| About
+			p
+				| Hello. My name is Dylan Brandt, I am a 
+				em senior
+				|  computer engineering student at the University of Minnesota.
+				|             I have enjoyed learning about computer science and electrical engineering in my degree and hope to graduate this winter. 
+				br
+				br
+				|             I was lucky to get an internship for this summer and fall semester at Steris Corp, a medical device company among other things.
+				|             At Steris my task has been to write an emulator software for one of their robots with the purpose of saving lab time for test engineers. 
+				br
+				br
+				|             I hope to sharpen my skills as a programmer this semester with CSCI 4131 and become a more well rounded developer.
+		.boxColumn
+			h1
+				| Hobbies
+			p
+				| In my freetime I enjoy several hobbies including rock climbing, skiing, videogaming, and playing musical instruments such as guitar, bass, and drums (I want a 
+				strong banjo
+				|  so badly).
+				|             Some of my other favorite things include the Minnesota state fair, baseball, and football.

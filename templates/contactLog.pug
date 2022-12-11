@@ -1,0 +1,40 @@
+doctype html
+head
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='resources/css/myStyle.css')
+    title Contact Log
+body
+    include navBar
+    h1 Contact Log
+    .formStyle
+        h2 Filter contacts
+        form(action="/contactLog", method="get")
+            | All 
+            input(type="radio", name="filter", value="All")
+            | Question
+            input(type="radio", name="filter", value="Question")
+            | Comment
+            input(type="radio", name="filter", value="Comment")
+            | Concern
+            input(type="radio", name="filter", value="Concern")
+            input(type="submit", value="Submit")
+        .tableWrapper
+            if contactMessages
+                table#contactLogTable(style="width: 90%")
+                    thead
+                        tr(class='evenRow')
+                            th From
+                            th Title
+                            th Category 
+                            th Message
+                    tbody
+                        each contact in contactMessages
+                            tr(class=(contact.messageId % 2 === 0 ? 'evenRow' : 'oddRow'))
+                                td
+                                    a(href="mailto:"+contact.messagerEmail) #{contact.messagerEmail}
+                                td= contact.messageTitle
+                                td= contact.messageCategory 
+                                td(style="white-space: pre")= contact.messageText
+        if noResult == true
+            #noQueryResult
+                | No messages found

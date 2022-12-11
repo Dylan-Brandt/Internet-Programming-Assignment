@@ -5,15 +5,13 @@ head
   link(rel='stylesheet' href='resources/css/myStyle.css')
   link(rel='stylesheet' href='resources/css/passwordWidget.css')
   link(rel='stylesheet' href='resources/css/weatherWidget.css')
+  link(rel='stylesheet' href='resources/css/clickWidget.css')
   script(async='' defer='' src='resources/js/weatherWidget.js')
   script(async='' defer='' src='resources/js/passwordWidget.js')
   script(async='' src='resources/js/timeWidget.js')
+  script(async='' src='resources/js/clickWidget.js')
 body
-  nav
-    a(href='myAboutMe.html') myAboutMe
-    a(href='myContacts.html') myContacts
-    a(href='myWidgets.html') myWidgets
-    a(href='contactMe.html') contactMe
+  include navBar
   h1 My Widgets
   .widgetWrapper
     iframe(width='560' height='315' src='https://www.youtube.com/embed/kwhx6xbSSJE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
@@ -58,3 +56,12 @@ body
         // Interesting fact. We're legally required to put this here.
         a(href='https://open-meteo.com/') Weather data by Open-Meteo.com
         a(href='https://sunrise-sunset.org/') Sunrise and sunset data by sunrise-sunset.org
+    #clickContainer
+      #clickHeader
+        h2 Count clicks across tabs
+      #clickContent 
+        label(for='click') Press below to update the click count
+        br
+        br
+        button(name='click' onclick='updateCount()') Click
+        p#clickStatus

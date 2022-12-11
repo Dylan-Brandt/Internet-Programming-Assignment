@@ -1,0 +1,12 @@
+
+body
+    nav
+        a(href='myAboutMe.html') myAboutMe
+        a(href='myContacts.html') myContacts
+        a(href='myWidgets.html') myWidgets
+        a(href='contactMe.html') contactMe
+        a(href='contactLog') contactLog
+        if(loginStatus)
+            a(href='login' id='login') #{username}
+        else
+            a(href='login' id='login') Login

@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Contact Me
+  link(rel='stylesheet' href='resources/css/myStyle.css')
+  script(src='resources/js/contactMe.js')
+body
+    include navBar
+    h1= loggedInMsg
+    .formStyle
+        if loggedOn == true
+            form(method='get', action='/logout')
+                input#logout(type='submit', value='Logout')
+        else
+            form(method='post', action='/login')
+                label(for='username') Username:
+                input#username(type='text', name='username')
+
+                label(for='password') Password:
+                input#password(type='password', name='password')
+
+                input(type='submit', value='Login')
